@@ -2,12 +2,12 @@ package school.mjc.stage0.loops.task2;
 
 public class WordsBuilder {
     public void buildPhrase(char... chars) {
-        String s = "";
+        StringBuilder phrase = new StringBuilder();
         int i = 0;
-        while (i <= chars.length - 1) {
-            s += chars[i];
+        while (i < chars.length) {
+            phrase.append(chars[i]);
             i++;
         }
-        System.out.println(s);
+        System.out.println(phrase.toString());
     }
 }
